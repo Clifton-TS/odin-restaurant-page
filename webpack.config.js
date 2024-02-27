@@ -11,7 +11,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       inject:"head",
-      scriptLoading:"defer"
+      scriptLoading:"defer",
+      template: "./src/index.html"
     })
   ],
   module: {
