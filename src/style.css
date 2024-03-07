@@ -3,6 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-weight: 100;
 }
 
 .header {
@@ -18,7 +19,7 @@ header {
   margin-top: 30px;
   display: flex;
   justify-content: center;
-  width: 40rem;
+  width: clamp(10%, 40rem, 40rem);
 }
 
 nav {
@@ -33,15 +34,15 @@ nav {
 .logo {
   margin: auto;
   margin-top: 10px;
-  width: 38rem;
+  width: 95%;
 }
 
 .button-group {
   box-sizing: border-box;
   display: flex;
-  width: 40rem;
+  width: 100%;
   justify-content: space-evenly;
-  gap: 30px;
+  gap: 5%;
   padding: 15px;
   border-radius: 30px;
 }
@@ -52,13 +53,13 @@ nav {
   color: #dfe594;
   border-radius: 5px;
   width: 8rem;
-  font-size: 1rem;
-  font-weight: 10;
-  font-family: fantasy;
+  font-size: 1.5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .button-group > li > button:hover {
-  border: #ffa293 solid 2px;
+  /* border: #ffa293 solid 2px; */
+  background-color: #5e8879;
 }
 
 .button-group > li > button:active {
@@ -75,9 +76,39 @@ nav {
   border-radius: 30px;
   border: #d26f5f 3px solid;
   width: 40rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  color: #426156;
+}
+
+.call {
+  margin: 60px 30px 30px 30px;
+  background-color: #d26f5f;
+  padding: 15px;
+  width: 70%;
+  border-radius: 15px;
+  color: black;
 }
 
 .section {
-  border: #d26f5f 3px solid;
-  width: 30rem;
+  border: #8e5e49 3px solid;
+  width: 70%;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+}
+
+.call > h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 100;
+}
+
+.author {
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+}
+
+.location > h2 {
+  color: black;
 }

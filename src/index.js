@@ -6,4 +6,4 @@ import "./images/logo.png";
 // a.classList.add("test")
 // a.textContent = "test"
 
-document.body.appendChild(a);
+// document.body.appendChild(a);
