@@ -6,11 +6,6 @@ body {
   font-weight: 100;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-}
-
 .yellow {
   background-color: #dfe594;
 }
@@ -20,6 +15,7 @@ header {
   display: flex;
   justify-content: center;
   width: clamp(10%, 40rem, 40rem);
+  user-select: none;
 }
 
 nav {
@@ -69,6 +65,7 @@ nav {
 
 .container {
   margin-top: 15px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,6 +106,15 @@ nav {
   font-weight: 100;
 }
 
-.location > h2 {
+.locations > h2 {
   color: black;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.location > img {
+  width: 2rem;
 }
